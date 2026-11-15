@@ -1,0 +1,46 @@
+================================================================================
+                    GIT COMMANDS DOCUMENTATION (git_commands.txt)
+                     Student: Saketh Sampath Vinay
+================================================================================
+
+1. git init
+   Initializes a new local Git repository in the current project directory.
+
+2. git status
+   Displays the state of the working directory and staging area, showing tracked, untracked, and modified files.
+
+3. git add <filename> / git add .
+   Adds specified files or all modifications to the staging area in preparation for a commit.
+
+4. git commit -m "<message>"
+   Records staged snapshots permanently to the repository history with an explanatory message.
+
+5. git branch <branch-name>
+   Creates a new branch pointer at the current commit.
+
+6. git checkout -b <branch-name> / git switch -c <branch-name>
+   Creates a new branch and immediately switches the working tree to it.
+
+7. git checkout <branch-name> / git switch <branch-name>
+   Switches from the current branch to the specified branch, updating working files.
+
+8. git merge <branch-name>
+   Combines the commit history of the specified branch into the currently active branch.
+
+9. git log --oneline --graph --decorate --all
+   Displays a visual, compact graph of the entire commit history across all branches.
+
+10. touch .gitignore (or New-Item .gitignore)
+    Creates the ignore configuration file used to specify file patterns (*.log, temp/) that Git should not track.
+
+11. git reset HEAD~1
+    Undoes the most recent commit by moving the HEAD pointer back by one commit while preserving working changes.
+
+12. git remote add origin <remote-repository-url>
+    Links the local Git repository to a remote repository hosted on GitHub under the alias 'origin'.
+
+13. git branch -M main
+    Renames the current default branch to 'main' for GitHub compatibility.
+
+14. git push -u origin main
+    Uploads local commits to the remote GitHub repository and configures upstream tracking.
